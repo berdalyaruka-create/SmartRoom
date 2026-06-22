@@ -17,25 +17,26 @@
 
 ```mermaid
 flowchart LR
-    actor Student
-    actor Wykładowca
-    actor Administrator
 
-    package "System SmartRoom" {
-        usecase "Logowanie" as UC1
-        usecase "Wyszukiwanie wolnych sal" as UC2
-        usecase "Rezerwacja sali" as UC3
-        usecase "Zarządzanie bazą sal" as UC4
-    }
+    Student[Student]
+    Wykladowca[Wykładowca]
+    Administrator[Administrator]
+
+    subgraph System_SmartRoom
+        UC1([Logowanie])
+        UC2([Wyszukiwanie wolnych sal])
+        UC3([Rezerwacja sali])
+        UC4([Zarządzanie bazą sal])
+    end
 
     Student --> UC1
     Student --> UC2
     Student --> UC3
-    
-    Wykładowca --> UC1
-    Wykładowca --> UC2
-    Wykładowca --> UC3
-    
+
+    Wykladowca --> UC1
+    Wykladowca --> UC2
+    Wykladowca --> UC3
+
     Administrator --> UC1
     Administrator --> UC4
 ```
