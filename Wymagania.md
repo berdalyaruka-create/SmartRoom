@@ -1,4 +1,4 @@
-```mermaid 
+```mermaid
 useCaseDiagram
     actor Student
     actor Wykładowca
@@ -28,4 +28,4 @@ useCaseDiagram
     Administrator --> UC6
 
     UC3 ..> UC1 : <<include>>
-    ```
+```
