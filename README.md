@@ -1,7 +1,7 @@
 # SmartRoom – System Rezerwacji Sal Uczelnianych
 
 ## Opis projektu
-Projekt SmartRoom to nowoczesna aplikacja webowa służąca do automatyzacji procesu rezerwacji sal na uczelni. System umożliwia studentom i wykładowcom sprawdzanie dostępności sal w czasie rzeczywistym oraz dokonywanie natychmiastowych rezerwacji [4, 6].
+Projekt SmartRoom to nowoczesna aplikacja webowa służąca do automatyzacji procesu rezerwacji sal na uczelni. System umożliwia studentom i wykładowcom sprawdzanie dostępności sal w czasie rzeczywistym oraz dokonywanie natychmiastowych rezerwacji.
 
 ## Dokumentacja projektu
 Wszystkie szczegółowe informacje znajdują się w poniższych dokumentach:
