@@ -38,7 +38,7 @@ classDiagram
     Uzytkownik "1" --> "*" Rezerwacja : dokonuje
     Sala "1" --> "*" Rezerwacja : jest_przedmiotem
 
-2. Diagram Sekwencji (Sequence Diagram)
+## 2. Diagram Sekwencji (Sequence Diagram)
 
 Przedstawia proces interakcji studenta z systemem podczas wyszukiwania i rezerwacji sali w czasie rzeczywistym.
 
@@ -48,16 +48,18 @@ sequenceDiagram
     participant System
     participant BazaDanych
 
-    Student->>System: Wyszukaj wolna sale
-    System->>BazaDanych: Zapytanie o dostepne sale
+    Student->>System: Wyszukaj sale
+    System->>BazaDanych: Sprawdz dostepne sale
     BazaDanych-->>System: Lista dostepnych sal
-    System-->>Student: Wyswietlenie wynikow
+    System-->>Student: Wyswietl wyniki
 
-    Student->>System: Wybor sali i rezerwacja
-    System->>BazaDanych: Zapis nowej rezerwacji
-    BazaDanych-->>System: Potwierdzenie zapisu
-    System-->>Student: Rezerwacja zakonczona sukcesem
-...
+    Student->>System: Wybierz sale
+    Student->>System: Rezerwuj sale
+
+    System->>BazaDanych: Zapisz rezerwacje
+    BazaDanych-->>System: Potwierdzenie
+
+    System-->>Student: Rezerwacja udana
 ```
 
 3. Diagram Aktywnosci (Activity Diagram)
