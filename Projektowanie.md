@@ -2,41 +2,37 @@ Projektowanie systemu – SmartRoom
 
 Dokumentacja techniczna zawierająca diagramy UML, które opisują strukturę danych oraz logikę działania systemu rezerwacji sal.
 
-1. Diagram Klas (Class Diagram)
+## 1. Diagram Klas (Class Diagram)
 
 ```mermaid
 classDiagram
-    class Uzytkownik {
-        +int id
-        +string login
-        +string email
-        +string haslo
-        +string rola
-        +zaloguj()
-    }
 
-    class Sala {
-        +int id
-        +string numer
-        +int pojemnosc
-        +string wyposazenie
-        +sprawdzDostepnosc()
-    }
+class Uzytkownik {
+    id : int
+    login : string
+    email : string
+    haslo : string
+    rola : string
+}
 
-    class Rezerwacja {
-        +int id
-        +date data
-        +time godzina_start
-        +time godzina_koniec
-        +string status
-        +utworz()
-        +anuluj()
-    }
-...
+class Sala {
+    id : int
+    numer : string
+    pojemnosc : int
+    wyposazenie : string
+}
+
+class Rezerwacja {
+    id : int
+    data : date
+    godzina_start : time
+    godzina_koniec : time
+    status : string
+}
+
+Uzytkownik "1" --> "*" Rezerwacja : dokonuje
+Sala "1" --> "*" Rezerwacja : dotyczy
 ```
-
-    Uzytkownik "1" --> "*" Rezerwacja : dokonuje
-    Sala "1" --> "*" Rezerwacja : jest_przedmiotem
 
 ## 2. Diagram Sekwencji (Sequence Diagram)
 
