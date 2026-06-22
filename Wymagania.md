@@ -1,4 +1,5 @@
-```mermaid useCaseDiagram
+```mermaid 
+useCaseDiagram
     actor Student
     actor Wykładowca
     actor Administrator
@@ -26,4 +27,5 @@
     Administrator --> UC5
     Administrator --> UC6
 
-    UC3 ..> UC1 : <<include>> ```
+    UC3 ..> UC1 : <<include>>
+    ```
