@@ -52,9 +52,9 @@ Obecny proces rezerwacji odbywa się mailowo lub telefonicznie, co prowadzi do d
 
 ## 8. Kryteria sukcesu
 *   Wszystkie wymagania funkcjonalne zostały zaimplementowane [7].
-*   Dokumentacja zawiera pełny zestaw diagramów UML [7].
-*   Aplikacja uruchamia się lokalnie i działa poprawnie [7].
+*   Dokumentacja zawiera pełny zestaw diagramów UML.
+*   Aplikacja uruchamia się lokalnie i działa poprawnie.
 
 ## 9. Akceptacja projektu
 *   **Prowadzący:** mgr Wojciech Moniuszko
-*   **Kierownik projektu:** Aruzhan Berdaly [8]
+*   **Kierownik projektu:** Aruzhan Berdaly 

@@ -38,3 +38,4 @@ useCaseDiagram
     
     Administrator --> UC1
     Administrator --> UC4
+```
