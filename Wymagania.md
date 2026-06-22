@@ -16,7 +16,7 @@
 ## 3. Diagram przypadków użycia (UML Use Case)
 
 ```mermaid
-useCaseDiagram
+flowchart LR
     actor Student
     actor Wykładowca
     actor Administrator
@@ -38,3 +38,4 @@ useCaseDiagram
     
     Administrator --> UC1
     Administrator --> UC4
+```
