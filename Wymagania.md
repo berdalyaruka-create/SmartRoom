@@ -3,15 +3,15 @@
 ## 1. Wymagania funkcjonalne
 | ID | Opis wymagania | Priorytet |
 |----|----------------|-----------|
-| F1 | Użytkownik może zalogować się do systemu. | Must [13] |
-| F2 | Użytkownik może wyszukać wolną salę według daty i godziny. | Must [13] |
-| F3 | Użytkownik może dokonać rezerwacji wybranej sali. | Must [13] |
-| F4 | Administrator może zarządzać bazą sal (dodawanie/usuwanie). | Should [13] |
+| F1 | Użytkownik może zalogować się do systemu. | Must |
+| F2 | Użytkownik może wyszukać wolną salę według daty i godziny. | Must |
+| F3 | Użytkownik może dokonać rezerwacji wybranej sali. | Must |
+| F4 | Administrator może zarządzać bazą sal (dodawanie/usuwanie). | Should |
 
 ## 2. Wymagania niefunkcjonalne
-* **Wydajność:** Maksymalny czas odpowiedzi systemu do 3 sekund [14], [15].
-* **Bezpieczeństwo:** Szyfrowanie haseł użytkowników (SHA256) [14], [15].
-* **Dostępność:** Interfejs responsywny (RWD) działający na urządzeniach mobilnych [16].
+* **Wydajność:** Maksymalny czas odpowiedzi systemu do 3 sekund.
+* **Bezpieczeństwo:** Szyfrowanie haseł użytkowników (SHA256).
+* **Dostępność:** Interfejs responsywny (RWD) działający na urządzeniach mobilnych.
 
 ## 3. Diagram przypadków użycia (UML Use Case)
 
@@ -38,4 +38,3 @@ useCaseDiagram
     
     Administrator --> UC1
     Administrator --> UC4
-```
