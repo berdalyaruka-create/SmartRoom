@@ -1,30 +1,29 @@
-# SmartRoom – System Rezerwacji Sal Uczelnianych
+# SmartRoom – System Rezerwacji Sal Uczelnianych (SRSU)
 
-## 📝 Opis projektu
-**SmartRoom** to nowoczesna aplikacja webowa zaprojektowana w celu usprawnienia procesu rezerwacji sal na uczelni. System pozwala studentom i wykładowcom na szybkie wyszukiwanie dostępnych zasobów w czasie rzeczywistym, eliminując błędy i brak przejrzystości tradycyjnych metod rezerwacji.
+## 🎯 Cel projektu
+SmartRoom to webowa aplikacja stworzona w celu zautomatyzowania procesu rezerwacji sal dydaktycznych. System umożliwia studentom i wykładowcom szybkie wyszukiwanie dostępnych zasobów oraz eliminację duplikowania rezerwacji.
 
-## 📚 Dokumentacja projektu
-Poniżej znajdują się odnośniki do szczegółowych etapów analizy i projektowania systemu:
-
-*   [**Karta Projektu**](./Karta_projektu.md) – cele, zakres, harmonogram i analiza ryzyk.
-*   [**Specyfikacja Wymagań**](./Wymagania.md) – wymagania funkcjonalne i niefunkcjonalne oraz diagram przypadków użycia (UML Use Case).
-*   [**User Stories**](./User_Stories.md) – opis funkcjonalności z perspektywy użytkownika wraz z kryteriami akceptacji (AC).
-*   [**Projektowanie Systemu**](./Projektowanie.md) – techniczna struktura systemu: diagramy klas, sekwencji i aktywności UML.
+## ✨ Główne funkcjonalności (User Stories)
+*   **US1: Wyszukiwanie sal** – Filtrowanie sal według minimalnej pojemności.
+*   **US2: Rezerwacja sal** – System rezerwacji w czasie rzeczywistym z walidacją konfliktów czasowych.
+*   **US3: Bezpieczeństwo** – Autoryzacja użytkowników z wykorzystaniem hashowania haseł (SHA256).
 
 ## 🛠️ Stos technologiczny
-Zgodnie z założeniami projektowymi, system wykorzystuje następujące narzędzia:
-*   **Backend:** Python (Django)
-*   **Frontend:** HTML5, CSS3, Bootstrap
-*   **Baza danych:** PostgreSQL
-*   **Kontrola wersji:** GitHub
+*   **Backend:** Python 3.x, Django Framework.
+*   **Frontend:** HTML5, CSS3, Bootstrap 5 (Responsive Web Design).
+*   **Baza danych:** PostgreSQL.
+*   **Kontrola wersji:** Git / GitHub.
 
-## 📊 Status projektu (Weekly Report)
-Projekt realizowany jest zgodnie z metodyką **Agile/Scrum**.
-*   **Faza obecna:** Konfiguracja środowiska i zakończenie etapu projektowania UML.
-*   **Najbliższe kroki:** Implementacja modeli danych i systemu logowania (Sprint 1).
+## 🚀 Instrukcja uruchomienia
+1. Sklonuj repozytorium: `git clone <url-twojego-repozytorium>`
+2. Zainstaluj wymagane biblioteki: `pip install django psycopg2`
+3. Skonfiguruj bazę danych PostgreSQL w `settings.py`.
+4. Wykonaj migracje: `python manage.py migrate`
+5. Uruchom serwer: `python manage.py runserver`
 
-## 👤 Autor
-*   **Aruzhan Berdaly** – Kierownik Projektu / Deweloper.
+## 📈 Status projektu
+Obecnie projekt znajduje się na etapie **8. Testowanie i poprawki** (zgodnie z harmonogramem). Wszystkie wymagania funkcjonalne (US1-US3) zostały pomyślnie zaimplementowane w prototypie.
 
 ---
-*Dokumentacja stworzona na potrzeby kursu "Zaawansowany Projekt Zespołowy" pod nadzorem mgr Wojciecha Moniuszki.*
+**Prowadzący:** mgr Wojciech Moniuszko
+**Autor:** Aruzhan Berdaly
